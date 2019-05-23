@@ -1,0 +1,13 @@
+create database iihtproject;
+use iihtproject;
+CREATE TABLE `questions` (   `qid` int(11) NOT NULL AUTO_INCREMENT,   `question` varchar(45) NOT NULL,   `answer` varchar(45) NOT NULL,   `topic` varchar(45) NOT NULL,   PRIMARY KEY (`qid`) ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+CREATE TABLE `java` (   `Qid` int(11) NOT NULL AUTO_INCREMENT,   `QName` varchar(255) NOT NULL,   `Answer` varchar(255) NOT NULL,   PRIMARY KEY (`Qid`) ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+CREATE TABLE `css` (   `Qid` int(11) NOT NULL AUTO_INCREMENT,   `QName` varchar(255) NOT NULL,   `Answer` varchar(255) NOT NULL,   PRIMARY KEY (`Qid`) ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+CREATE TABLE `topics` (   `topicid` int(11) NOT NULL AUTO_INCREMENT,   `topicname` varchar(45) NOT NULL,   PRIMARY KEY (`topicid`) ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+
+CREATE TABLE `users` (   `userid` int(11) NOT NULL AUTO_INCREMENT,   `username` varchar(45) NOT NULL,   `usermail` varchar(45) NOT NULL,   `userpassword` varchar(45) NOT NULL,   `userphno` varchar(45) NOT NULL,   PRIMARY KEY (`userid`) ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
